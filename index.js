@@ -91,7 +91,7 @@ proxy.addCompressionHandler(targetContentTypes, function(requestEndpoint, respon
             responseBody: responseBody
         }
     }
-
+    
     var compressedResponse = jsonModel.objectData(response);
 
     // DICTIONARY ==
