@@ -1,0 +1,15 @@
+{
+  "name": "bitsy-proxy",
+  "version": "1.0.0",
+  "description": "A proxy testing server for Bitsy JSON differential compression.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bitsy Inc",
+  "license": "ISC",
+  "dependencies": {
+    "crc": "^3.4.4",
+    "http-mitm-proxy": "^0.5.1"
+  }
+}
