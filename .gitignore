@@ -1,4 +1,4 @@
-.http-mitm-proxy/
-.idea/
-node_modules/
+.http-mitm-proxy/*
+.idea/*
+node_modules/*
 
