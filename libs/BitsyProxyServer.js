@@ -102,9 +102,9 @@ BitsyProxyServer.prototype._setupMiddlewares = function() {
     }
 }
 
-/**********************
+/****************************
  * BitsyProxyServer Setters *
- **********************/
+ ****************************/
 
 BitsyProxyServer.prototype.addCompressionHandler = function(contentType, compressionHandler) {
     if (Array.isArray(contentType)) {

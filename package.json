@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "crc": "^3.4.4",
-    "http-mitm-proxy": "^0.5.1"
+    "http-mitm-proxy": "^0.5.1",
+    "lru-cache": "^4.0.2"
   }
 }
