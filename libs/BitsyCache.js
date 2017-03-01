@@ -1,5 +1,6 @@
 const fs = require('fs');
 const LRU = require('lru-cache');
+
 const cacheDirectory = './.bitsy-cache';
 const cacheExtension = 'bcf';
 
@@ -28,9 +29,9 @@ function BitsyCache(cacheSizeBytes) {
     }
 }
 
-/**********************
- * BitsyCache Methods *
- **********************/
+/*****************************
+ * BitsyCache Public Methods *
+ *****************************/
 
 BitsyCache.prototype.add = function(key, value) {
     this._cache.set(key, value);
@@ -49,6 +50,10 @@ BitsyCache.prototype.get = function(key) {
 
     return value;
 }
+
+/******************************
+ * BitsyCache Private Methods *
+ ******************************/
 
 BitsyCache.prototype._addToDisk = function(key, value) {
     var filePath = cacheDirectory + `/${key}.${cacheExtension}`;

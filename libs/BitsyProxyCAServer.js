@@ -12,9 +12,9 @@ function BitsyProxyCA(port, caPath) {
     this._caPath = (caPath) ? caPath : './.http-mitm-proxy/certs/ca.pem';
 }
 
-/******************************
- * BitsyProxyCAServer Methods *
- ******************************/
+/*************************************
+ * BitsyProxyCAServer Public Methods *
+ *************************************/
 
 BitsyProxyCA.prototype.start = function() {
     http.createServer(function(request, response) {

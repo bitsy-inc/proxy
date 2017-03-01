@@ -20,9 +20,9 @@ function BitsyProxyServer(port) {
     this._useWildcard           = true;
 }
 
-/****************************
- * BitsyProxyServer Methods *
- ****************************/
+/***********************************
+ * BitsyProxyServer Public Methods *
+ ***********************************/
 
 BitsyProxyServer.prototype.start = function() {
     this._setupMiddlewares();
@@ -34,6 +34,10 @@ BitsyProxyServer.prototype.start = function() {
         silent: this._silenceServerStatus
     });
 }
+
+/************************************
+ * BitsyProxyServer Private Methods *
+ ************************************/
 
 BitsyProxyServer.prototype._proxyRequestCallback = function(ctx, callback) {
     var bitsyProxyServer = this;
