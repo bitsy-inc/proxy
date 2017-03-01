@@ -18,6 +18,14 @@ var rebuilt = generalModel.rebuildObject(data, pattern);
 
 console.log(rebuilt);
 
+// Bitsy Cache usage
+var cache = new BitsyCache(1024); // 1024 bytes of cache, anything over will swap the least recently used items in cache to disk.
+cache.add('/user/photos/123', '!! some api data !!');
+cache.add('/user/photos/456', 'more api data');
+
+console.log(cache.get('/user/photos/123'));
+
+
 // temp
 return;
 
