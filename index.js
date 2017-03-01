@@ -1,12 +1,27 @@
+const BitsyCache = require('./libs/BitsyCache');
+
 /*********
  * Setup *
  *********/
 
 const BitsyProxyServer = require('./libs/BitsyProxyServer');
 const jsonModel = require('./libs/compression/models/jsonModel');
+const generalModel = require('./libs/compression/models/generalModel');
 const http = require('http');
 const crc = require('crc');
 const zlib = require('zlib');
+
+
+var pattern = generalModel.objectPattern('<html>hi</html>', '<html>bye</html>');
+var data = generalModel.objectData('<html>braydon</html>', pattern);
+var rebuilt = generalModel.rebuildObject(data, pattern);
+
+console.log(rebuilt);
+
+// temp
+return;
+
+
 
 /*
 var input = {
