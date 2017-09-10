@@ -14,7 +14,7 @@ Also, check out the index.js file - you can configure a handful of things there,
 
 Here's a screenshot of data savings from the Instagram timeline endpoint.
 
-![Savings](https://ibb.co/iKCNZF "Savings")
+![Savings Screenshot](https://ibb.co/iKCNZF)
 
 ## Installation
 
