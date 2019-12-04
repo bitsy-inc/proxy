@@ -8,7 +8,7 @@ With Bitsy, once a response from some endoint has been received by the client fo
 
 This proxy is a rough proof of concept, we've primarily trialed it while browsing Instagram via our web browser, routing all requests through the proxy - or using Facebook messenger (Any service will work though). We typically saw savings of data throughput well over 50% just after the first few minutes of browsing once the models for common API endpoint requests had been built.
 
-If you want to take a look at the meat of the codebase that does the heavy lifting, check out  the /libs/compression/models/jsonModel.js file.
+If you want to take a look at the meat of the codebase that does the heavy lifting, check out  the /libs/compression/models/generalModel.js file.
 
 Also, check out the index.js file - you can configure a handful of things there, like which content type's to run the modeling & caching algorithms on a so-forth.
 
